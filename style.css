@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.product .title {
+    margin: 0 0 20px;
+    background-color: #009688;
+    color: #fff;
+    padding: 15px;
+    width: calc(100% + 80px);
+    left: -40px;
+    position: relative;
+}
+.product .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #02766b #02766b transparent transparent;
+}
+.product .title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #02766b transparent transparent #02766b;
+}
+.product p {
+    line-height: 1.6;
+}
+.product .title2 {
+    color: #fff;
+    font-size: 20px;
+    background-color: #009688;
+    margin: 40px 0 0 0;
+    padding: 3px;
+    width: calc(100% + 60px);
+    position: relative;
+    left: -30px;
+}
+.product .title2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #02766b #02766b transparent transparent;
+}
+.product .title2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent #02766b #02766b;
+}
